@@ -1,0 +1,29 @@
+.pass-strength-widget {
+  margin-top: 8px;
+  width: 150px;
+  display: flex;
+  height: 4px;
+  gap: 4px;
+}
+
+.pass-strength-widget .section {
+  border-radius: 5px;
+  background: lightgrey;
+  flex-grow: 1;
+}
+
+.pass-strength-widget.error .section {
+  background-color: red;
+}
+
+.pass-strength-widget.easy .section:nth-child(1) {
+  background-color: red;
+}
+
+.pass-strength-widget.medium .section:nth-child(-n + 2) {
+  background-color: yellow;
+}
+
+.pass-strength-widget.strong .section:nth-child(-n + 3) {
+  background-color: green;
+}
