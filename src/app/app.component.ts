@@ -4,9 +4,7 @@ import { FormControl, Validators } from '@angular/forms';
 type PassStrength = 'empty' | 'easy' | 'medium' | 'strong';
 
 const hasLetters = (str: string) => /[a-zA-Z]/.test(str);
-
 const hasNumbers = (str: string) => /\d/.test(str);
-
 const hasSymbols = (str: string) => /[^a-zA-Z\d]/.test(str);
 
 const getPassStrength = (pass: string): PassStrength => {
